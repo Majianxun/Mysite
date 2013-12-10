@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="甘肃  陇南  武都  医院" />
+    <meta name="description" content="" />
+    <title>陇南市第一人民医院</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/goodnav.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/css-table.css" />
+
+    <script type="text/javascript" src="js/style-table.js"></script>
+
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.litenav.js" type="text/javascript"></script>
+
+    <script src="js/lightbox.js"></script>
+    <script type="text/javascript">
+        var speed = 30; //滚动的速度,数字越小快，前面的var为定义一个变量，是固定的语法
+        var tab = document.getElementById("demo"); //获取id为demo的div
+        var tab1 = document.getElementById("demo1"); //获取id为demo1的div
+        var tab2 = document.getElementById("demo2"); //获取id为demo1的div        
+        tab2.innerHTML = tab1.innerHTML;
+        var MyMar = setInterval(Marquee, speed);
+
+        function Marquee() {
+
+            if (tab2.offsetWidth - tab.scrollLeft <= 0) {
+                tab.scrollLeft -= tab1.offsetWidth;
+            } else {
+                tab.scrollLeft++;
+            }
+        }
+        tab.onmouseover = function() { clearInterval(MyMar) };
+        tab.onmouseout = function() { MyMar = setInterval(Marquee, speed) };
+
+</script>
+
+    <script type="text/javascript">                
+        $(function() {
+            $(".stitle li").mouseover(function() {
+                var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+                $(this).parent().find(".open").removeClass("open").addClass("close"); //选项卡背景处理 
+                $(this).removeClass("close").addClass("open");
+                var content_obj = $(".cntorder") //内容节点 
+                content_obj.hide();
+                content_obj.eq(index_tab).show();
+            });
+        });
+        $(document).ready(function() {
+
+            $('tbody tr').hover(function() {
+                $(this).addClass('odd');
+            }, function() {
+                $(this).removeClass('odd');
+            });
+
+        });
+           
+</script>
+
+
+</head>
+<body>
+    <div class="bodyDiv">
+        <div id="content" class="center">
+            <div style="font-size: 14px; float: right; position: relative; color: #999">
+                设置为首页 | 收藏本站
+            </div>
+            <div class="headerDiv">
+                <div class="header center">
+                    <img src="images/header2.png" alt="" style="width: 100%; margin-top: -19px; height: 130px;" /></div>
+            </div>
+            <div class="menuDiv">
+                <div class="menu center">
+                    <ul>
+                        <li><a class="hide" style="width: 50px; background: url('images/menuleft.png')"></a>
+                        </li>
+                        <li><a class="hide" href="index.html">医院首页</a> </li>
+                        <li><a class="hide" href="index.html">医院介绍</a>
+                            <ul>
+                                <li><a href="#" title="non-rectangular links">医院简介</a></li>
+                                <li><a href="#" title="jigsaw links">医院领导</a></li>
+                                <li><a href="#" title="circular links">院长致辞</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hide" href="index.html">科室介绍</a>
+                            <ul>
+                                <li><a href="#" title="non-rectangular links">专业科室</a></li>
+                                <li><a href="#" title="jigsaw links">医技科室</a></li>
+                                <li><a href="#" title="circular links">后勤科室</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hide" href="index.html">文化天地</a>
+                            <ul>
+                                <li><a href="#" title="circular links">护理天地</a></li>
+                                <li><a href="#" title="non-rectangular links">文体生活</a></li>
+                                <li><a href="#" title="jigsaw links">杏苑随笔</a></li>
+                                <li><a href="#" title="circular links">患者之声</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hide" href="index.html">院务公开</a>
+                            <ul>
+                                <li><a href="#" title="non-rectangular links">收费信息</a></li>
+                                <li><a href="#" title="jigsaw links">服务项目</a></li>
+                                <li><a href="#" title="circular links">医疗保险</a></li>
+                                <li><a href="#" title="circular links">法律法规</a></li>
+                                <li><a href="#" title="circular links">监督投诉</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hide" href="index.html">人才引进</a>
+                            <ul>
+                                <li><a href="#" title="non-rectangular links">招聘信息</a></li>
+                                <li><a href="#" title="jigsaw links">服务项目</a></li>
+                                <li><a href="#" title="circular links">医疗保险</a></li>
+                                <li><a href="#" title="circular links">法律法规</a></li>
+                                <li><a href="#" title="circular links">监督投诉</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hide" style="width: 34px; background: url('images/menuright.png')"></a>
+                        </li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+           
+            		<div class="sitemap">
+				当前位置：<a href="index.html" >首页</a> >> 医院介绍
+	  </div>  
+            <div style="width: 100%">
+                <div class="leftContent ">
+                    <div class="item" style="text-align: center; font-size: 13px;">
+                        <img src="images/123.gif" style="width: 100%" />
+                    </div>
+                    <div class="item">
+                        <div class="itemTitle">
+                            便捷入口</div>
+                        <div class="itemContent">
+                            <ul class="fastEntryList" style="list-style: none;">
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" />
+                                        <div>
+                                            就诊流程
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" /><div>
+                                            诊室分布</div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" /><div>
+                                            专家出诊表</div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" /><div>
+                                            预约挂号</div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" /><div>
+                                            出入院须知</div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div>
+                                        <img src="images/fastIcon.gif" alt="" /><div>
+                                            体检指南</div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item" style="margin-top: 5px; text-align: center; font-size: 13px;">
+                        <img src="images/tousu.png" />
+                        <div>
+                            电话：0939-3334554</div>
+                    </div>
+                    <div class="item" style="margin-top: 5px; text-align: center; font-size: 13px;">
+                        <img src="images/mailBox.png" />
+                    </div>
+                    <div class="item" style="margin-top: 5px; text-align: center; font-size: 13px;">
+                        <img src="images/qa.jpg" style="width: 100%" />
+                    </div>
+                </div>
+                <div class="rightContent">
+                    <div style="background: #fff;">
+                        <p>
+                            专家出诊表</p>
+                        <div class="itemContent" style="padding: 10px; height: 600px;">
+                            <div style="width:auto">
+                                <table id="expertVisit">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">
+                                                科室
+                                            </th>
+                                            <th scope="col" colspan="8">
+                                                出诊时间
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">
+                                                时间
+                                            </th>
+                                            <th scope="col">
+                                                星期一
+                                            </th>
+                                            <th scope="col">
+                                                星期二
+                                            </th>
+                                            <th scope="col">
+                                                星期三
+                                            </th>
+                                            <th scope="col">
+                                                星期四
+                                            </th>
+                                            <th scope="col">
+                                                星期五
+                                            </th>
+                                            <th scope="col">
+                                                星期六
+                                            </th>
+                                            <th scope="col">
+                                                星期日
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                消化科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                心内科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                呼吸科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                呼吸内科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                血液科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                外科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2">
+                                                骨科
+                                            </th>
+                                            <td>
+                                                上午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                下午
+                                            </td>
+                                            <td>
+                                                徐莹
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                张三
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                            <td>
+                                                李四四
+                                            </td>
+                                            <td>
+                                                无
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="foot" class="foot">
+                <div id="nav">
+                    ┊ 关于我们 ┊ 网站地图 ┊ 帮助信息 ┊ 版权声明 ┊ 流量统计 ┊
+                </div>
+                <div>
+                    <img src="images/bootimg.png" alt="" width="960px" />
+                </div>
+            </div>
+        </div>
+</body>
+</html>

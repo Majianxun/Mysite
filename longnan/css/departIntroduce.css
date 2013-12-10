@@ -1,0 +1,17 @@
+@charset "utf-8";
+.departPartion
+{
+    height: 150px;
+    border: #d2d2d2 2px solid;
+}
+
+.departTitleFont
+{
+    margin: -2px; 
+    font-size:15px   
+}
+.departTitleBackgroud
+{
+    background-image: url('../images/departIntroduce/tbg.jpg'); 
+    height:10%
+}

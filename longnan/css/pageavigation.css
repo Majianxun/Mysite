@@ -1,0 +1,12 @@
+@charset "utf-8";
+.pagenavigation
+{
+    background-color:Green;
+    height:30%;
+}
+
+.navigationBody
+{
+    background-color:red;
+    height:90%;
+}
